@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Quicksand:wght@300&display=swap');
+*{
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(-45deg,#280acb,#ab44ca ,#4a00e0);
+	/*background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: black;
+}
+
+html{
+  height: 100%;
+}
+.text{
+  color: white;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;}
+.line{
+  height:50px;
+  overflow: hidden;
+  position: relative;
+}
+ p {
+  height: -50px;
+  transition: all 0.5s ease-in-out;
+  line-height: 50px;
+
+}
+.text:hover p{
+  transform:translateY(-50px);
+}
+.line:nth-child(odd){
+  transform: skew(60deg, -30deg) scaleY(0.700);
+}
+.line:nth-child(even){
+  transform: skew(0deg, -30deg) scaleY(1.333);
+}
+.line:nth-child(1){
+  left: 29px;
+}
+.line:nth-child(2){
+  left: 58px;
+}
+.line:nth-child(3){
+  left: 87px;
+}
+.line:nth-child(4){
+  left: 116px;
+}
+.line:nth-child(5){
+  left: 145px;
+}
+.line:nth-child(6){
+  left: 100px;
+}
+
+
+
+
+@keyframes gradient {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
